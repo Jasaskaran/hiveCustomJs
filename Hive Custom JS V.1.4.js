@@ -353,7 +353,7 @@ function resetFilterButtons(){
     let c = jQuery(`.subjRow.${v}`).length;
     if(v!='All'){
       if(jQuery('#historyFilter').is(":checked")){c += jQuery(`#nfyHistoryBody p.${v}`).length};
-      if(c>0){el.classList.remove("hideLabel")}else{el.classList.add("hideLabel")};
+      if(c>0){el.classList.remove("hideLabel")}else{el.classList.add("hideLabel");if(jQuery(el).is(":checked")){jQuery(el).parent().children()[0].checked=true};};
     }
   });
 }
