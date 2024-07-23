@@ -1,4 +1,4 @@
-console.log("Hive Custom Script V1.4 - ymahendrarajah@alec.ae");
+console.log("Hive Custom Script V1.5 - ymahendrarajah@alec.ae");
 
 // Filter Button Functions
 function Includes(object,value){return Object.values(object).includes(value);}
