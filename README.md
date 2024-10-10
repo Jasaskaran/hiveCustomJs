@@ -1,6 +1,8 @@
 # **Hive Custom Script**
 
 ## **Latest Version V 1.7.2**
+## **Stable Version V 1.7.2**
+## **Beta Version V --- **
 
 ## **Version Histroy**
 
