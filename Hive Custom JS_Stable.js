@@ -44,7 +44,7 @@ function AddFilters() {
     <input type="radio" class="hideLabel" value="ALCSCRFP" id="F_ALCSCRFP" name="ItemType"><label for="F_ALCSCRFP">RFP</label>
     <input type="radio" class="hideLabel" value="ALECAC" id="F_ALECAC" name="ItemType"><label for="F_ALECAC">Auto Charge</label>
     <input type="radio" class="hideLabel" value="ALCETE" id="F_ALCETE" name="ItemType"><label for="F_ALCETE">One Time Charge</label>
-    <input type="radio" class="hideLabel" value="ALCETE" id="F_ALCINVTR" name="ItemType"><label for="F_ALCINVTR">Inventory Transaction</label>
+    <input type="radio" class="hideLabel" value="ALCINVTR" id="F_ALCINVTR" name="ItemType"><label for="F_ALCINVTR">Inventory Transaction</label>
   </span>
   `;
   var form = document.createElement("form");
