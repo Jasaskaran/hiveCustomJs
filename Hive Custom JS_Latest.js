@@ -137,7 +137,7 @@ if(!document.querySelector(`input[value="${nfyList[key].Oraseq}"]`)) {
 }
 });
 
-var retainDays=180; //6 months
+var retainDays=60; //2 months
 // Remove old entries
 Object.keys(nfyList).forEach(key => {
 if (nfyList[key].visibility === false && (isOlder(nfyList[key].addedOn,retainDays) || isOlder(nfyList[key].lastUpdate,retainDays))){
