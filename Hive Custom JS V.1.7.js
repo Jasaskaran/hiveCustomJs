@@ -129,11 +129,13 @@ nfyList[`Oraseq${oraseq}`] = {
 }
 });
 
-// Update visibility
+var retainDays=60; //2 months
+// Remove old entries
 Object.keys(nfyList).forEach(key => {
-if(!document.querySelector(`input[value="${nfyList[key].Oraseq}"]`)) {
-  if(nfyList[key].visibility){nfyList[key].visibility = false;nfyList[key].lastUpdate = now();}
-}
+if (nfyList[key].visibility === false && (isOlder(nfyList[key].addedOn,retainDays) || isOlder(nfyList[key].lastUpdate,retainDays))){
+  delete nfyData[nfyList[key].NotificationId];
+  delete nfyList[key];
+  }
 });
 
 // Remove date > 30 days
